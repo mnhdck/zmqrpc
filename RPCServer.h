@@ -1,7 +1,7 @@
 ﻿/**************************************************************************************
-*    < Copyright by HAXC. Co. >
-*    File		  :	RPC.h
-*	 Description  : Remote Process Call Interface
+*    < Copyright by Littlemeng >
+*    File		  :	RPCServer.h
+*	 Description  : Remote Process Call Server Interface
 *	 System	      : 
 *	 Module	      : 
 *    Implement    : 
@@ -9,10 +9,10 @@
 *    Update Date	   Update Reason		         Ver.	   Author     
 *    (2017/09/13)(Create                          )(0.1    )(mengnaihong) 
 **************************************************************************************/
-#ifndef RPC_H
-#define RPC_H
-#include "zmq.hpp"
+#ifndef _RPCSERVER_H
+#define _RPCSERVER_H
 #include <string>
+#include "zmq.hpp"
 #ifndef _WIN32
 #include <unistd.h>
 #else
@@ -112,4 +112,4 @@ private:
 	std::string m_sAddr;
 };
 
-#endif //RPC_H
+#endif //_RPCSERVER_H
